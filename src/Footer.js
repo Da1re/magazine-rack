@@ -22,7 +22,7 @@ const Footer = () => {
           start: '0% 100%',
           end: '70% 0%',
           scrub: 1,
-          markers: true,
+          //markers: true,
         },
       })
       .to('.logoWrap', { top: '20%', ease: 'none', duration: 5 }, 0);
