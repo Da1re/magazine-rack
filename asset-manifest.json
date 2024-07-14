@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/magazine-rack/static/css/main.77f0a3f9.css",
+    "main.js": "/magazine-rack/static/js/main.afd25db9.js",
+    "static/js/453.c5eb484e.chunk.js": "/magazine-rack/static/js/453.c5eb484e.chunk.js",
+    "static/media/img4.jpg": "/magazine-rack/static/media/img4.cf82e43d10e8abf4b547.jpg",
+    "static/media/img0.jpg": "/magazine-rack/static/media/img0.5dea3005bf10d328dbe5.jpg",
+    "static/media/img5.jpg": "/magazine-rack/static/media/img5.957c266f200c15bc2087.jpg",
+    "static/media/img2.jpg": "/magazine-rack/static/media/img2.464429805e61d668fe39.jpg",
+    "static/media/img3.jpg": "/magazine-rack/static/media/img3.3ae3aecc79092bd5cdb5.jpg",
+    "static/media/img6.jpg": "/magazine-rack/static/media/img6.6052d6b6c6c7c711fdfa.jpg",
+    "static/media/img1.jpg": "/magazine-rack/static/media/img1.0592d5316b62218770fe.jpg",
+    "index.html": "/magazine-rack/index.html",
+    "main.77f0a3f9.css.map": "/magazine-rack/static/css/main.77f0a3f9.css.map",
+    "main.afd25db9.js.map": "/magazine-rack/static/js/main.afd25db9.js.map",
+    "453.c5eb484e.chunk.js.map": "/magazine-rack/static/js/453.c5eb484e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77f0a3f9.css",
+    "static/js/main.afd25db9.js"
+  ]
+}
