@@ -14,9 +14,6 @@ const App = () => {
       <div className="wrap">
         <Header />
         <Routes>
-          {/* <Route path="/" element={<LayoutWithOutHeader />} />
-          <Route path="/*" element={<LayoutWithHeader />} /> */}
-
           <Route path="/" element={<MainApp />} />
         </Routes>
         <Footer />
@@ -24,6 +21,5 @@ const App = () => {
     </Router>
   );
 };
-
 
 export default App;

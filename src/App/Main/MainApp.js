@@ -28,7 +28,6 @@ const MainApp = () => {
         start: '100% 100%',
         end: '100% 0%',
         scrub: 1,
-       
       },
     });
     visual
@@ -73,7 +72,6 @@ const MainApp = () => {
             start: '100% 100%',
             end: '100% 100%',
             scrub: 1,
-           
           },
         })
         .fromTo(
@@ -94,7 +92,6 @@ const MainApp = () => {
             start: '100% 100%',
             end: '100% 100%',
             scrub: 1,
-           
           },
         })
         .fromTo(
@@ -138,7 +135,6 @@ const MainApp = () => {
             start: '00% 20%',
             end: '0% 0%',
             scrub: 1,
-            
           },
         })
         .to(
@@ -171,12 +167,9 @@ const MainApp = () => {
               delay: (i % 3) * 0.1,
             });
           },
-          
         });
       });
     });
-
-   
   }, []);
 
   return (
