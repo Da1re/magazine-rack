@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import img0 from '../../images/img0.jpg';
 import img1 from '../../images/img1.jpg';
@@ -10,7 +9,7 @@ import img4 from '../../images/img4.jpg';
 import img5 from '../../images/img5.jpg';
 import img6 from '../../images/img6.jpg';
 
-//gsap.registerPlugin(ScrollTrigger);
+
 
 const Projects = [
   { title: 'Daebang', type: 'Undustry', year: '2024', imgSrc: img0 },

@@ -21,13 +21,10 @@ import g from '../../images/logo/L_G.png';
 
 const MainApp = () => {
   useEffect(() => {
-    console.log('MainApp Window object:', window);
-    console.log('MainApp GSAP object:', gsap);
-    console.log('MainApp ScrollTrigger plugin:', ScrollTrigger);
+
     /* main 첫 화면  */
     if (typeof window !== 'undefined') {
-      gsap.registerPlugin(ScrollTrigger);
-      console.log('MainApp ScrollTrigger registered:', ScrollTrigger);
+
       const visual = gsap.timeline({
         scrollTrigger: {
           trigger: '.visual',
