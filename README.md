@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# ⭐Magazine Rack Portfolio 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub last commit](https://img.shields.io/github/last-commit/Da1re/magazine-rack)
+![GitHub repo size](https://img.shields.io/github/repo-size/Da1re/magazine-rack)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 
+- **React**
+- **CSS**: 사용자 경험을 향상시키기 위해 세련되고 반응형 디자인을 구현하였습니다.
+- **GSAP ScrollTrigger**: 스크롤 애니메이션을 통해 인터랙티브하고 동적인 사용자 경험을 제공합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌏
+[Magazine Rack Portfolio](https://username.github.io/repository-name)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 주요 기능
+- **홈페이지**: React+GSAP
+- **프로젝트**: 참여한 프로젝트 목록과 설명
+- **기술 스택**:  사용하는 기술 스택 소개
+- **연락처**: 연락 가능 정보 및 소셜 미디어 링크
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💌 사용된 기술 스택
+- **프론트엔드**: React, JavaScript, HTML, CSS
+- **배포**: GitHub Pages
+- **버전 관리**: Git
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Da1re&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 📌설치 및 실행 방법
+로컬 환경에서 이 프로젝트를 실행하려면 다음 단계를 따르세요.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 사전 요구사항
+- Node.js (v14 이상)
+- npm (v6 이상)
 
-### Advanced Configuration
+### 1️⃣설치
+1. 레포지토리를 클론합니다.
+    ```sh
+    git clone https://github.com/username/repository-name.git
+    cd repository-name
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. 필요한 패키지를 설치합니다.
+    ```sh
+    npm install
+    ```
 
-### Deployment
+### 2️⃣실행
+개발 서버를 실행합니다.
+```sh
+npm start
+```
+브라우저에서 http://localhost:3000을 열어 프로젝트를 확인하세요.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
