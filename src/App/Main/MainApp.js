@@ -17,10 +17,11 @@ import u from '../../images/logo/L_U.png';
 import n from '../../images/logo/L_N.png';
 import g from '../../images/logo/L_G.png';
 
-//gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const MainApp = () => {
   useEffect(() => {
+    console.log('ScrollTrigger loaded:', ScrollTrigger);
     /* main 첫 화면  */
     if (typeof window !== 'undefined') {
       const visual = gsap.timeline({

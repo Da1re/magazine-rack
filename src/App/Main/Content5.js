@@ -10,7 +10,7 @@ import img4 from '../../images/img4.jpg';
 import img5 from '../../images/img5.jpg';
 import img6 from '../../images/img6.jpg';
 
-//gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = [
   { title: 'Daebang', type: 'Undustry', year: '2024', imgSrc: img0 },
