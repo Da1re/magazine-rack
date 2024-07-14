@@ -250,7 +250,6 @@ footer .inner {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
 }
 footer .inner .box {
   padding: 50px 0 0;
@@ -423,6 +422,7 @@ footer .logoWrap span img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 90px;
+  overflow: hidden;
 }
 .con1 .box .mainText {
   font-size: 30px;
@@ -491,6 +491,7 @@ footer .logoWrap span img {
 .con2 .inner {
   position: relative;
   padding: 40px 50px;
+  overflow: hidden;
 }
 .con2 .inner:before {
   content: '';
@@ -501,6 +502,7 @@ footer .logoWrap span img {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
+  
 }
 
 /* con2 mainText box */
@@ -798,4 +800,12 @@ footer .logoWrap span img {
   transform: scale(0);
   opacity: 0;
   z-index: 100;
+}
+
+.con5 .imgBox img {
+  border-radius: 12px;
+}
+
+.wrap.on {
+  overflow: hidden;
 }

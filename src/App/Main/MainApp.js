@@ -28,7 +28,7 @@ const MainApp = () => {
         start: '100% 100%',
         end: '100% 0%',
         scrub: 1,
-        //markers: true,
+       
       },
     });
     visual
@@ -73,7 +73,7 @@ const MainApp = () => {
             start: '100% 100%',
             end: '100% 100%',
             scrub: 1,
-            //markers: true,
+           
           },
         })
         .fromTo(
@@ -94,7 +94,7 @@ const MainApp = () => {
             start: '100% 100%',
             end: '100% 100%',
             scrub: 1,
-            //markers: true,
+           
           },
         })
         .fromTo(
@@ -138,7 +138,7 @@ const MainApp = () => {
             start: '00% 20%',
             end: '0% 0%',
             scrub: 1,
-            //markers: true,
+            
           },
         })
         .to(
@@ -171,7 +171,7 @@ const MainApp = () => {
               delay: (i % 3) * 0.1,
             });
           },
-          //markers: true,
+          
         });
       });
     });
