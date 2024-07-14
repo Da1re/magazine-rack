@@ -10,7 +10,7 @@ import u from './images/logo/L_U.png';
 import n from './images/logo/L_N.png';
 import g from './images/logo/L_G.png';
 
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
   useEffect(() => {
