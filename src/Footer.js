@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import j from './images/logo/L_G.png';
+import j from './images/logo/L_J.png';
 import y from './images/logo/L_Y.png';
 import o from './images/logo/L_O.png';
 import u from './images/logo/L_U.png';
@@ -32,12 +31,17 @@ const Footer = () => {
       <div className="inner">
         <div className="box">
           <div className="mainTextBox">
-            <h2>LET's TALK</h2>
+            <h2>💌 Comment </h2>
             <p>
-              <span>Contact, testimonial or simple hello...</span>
-              Leave us an audio message
+              해당 web Site는 React를 기반으로 GSAP의 ScrollTrigger를 활용하여
+              제작하였으며, Git Hub Pages로 배포했습니다.
               <br />
-              and your contact details if you wish to be contacted.
+              <br />
+              <br />
+              <br />
+              💻 wien2009@naver.com | 📱 010-7761-5801
+              <br />
+              🔗 photoshop 포트폴리오는 tistory를 확인해주세요!
             </p>
           </div>
           <div className="talkBtn">
@@ -46,16 +50,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="btnBox">
-            <a href="/" className="btn">
-              email
-            </a>
-            <a href="/" className="btn">
-              call
-            </a>
-            <a href="/" className="btn">
+            <a href="https://dalre.tistory.com/" className="btn">
               tistory
             </a>
-            <a href="/" className="btn">
+            <a href="https://github.com/Da1re/magazine-rack" className="btn">
               git
             </a>
           </div>

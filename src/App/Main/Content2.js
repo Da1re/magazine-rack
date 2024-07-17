@@ -1,4 +1,5 @@
 import React from 'react';
+import con2_1 from '../../images/con2_1.jpg';
 
 const Content2 = () => {
   return (
@@ -7,12 +8,7 @@ const Content2 = () => {
         <div className="mainTextBox">
           <span>Together, let's put your project together</span>
           <div className="in">
-            <video className="box" playsInline="" autoPlay="" loop="" muted="">
-              <source
-                src="https://cdn.sanity.io/files/u6q95fqm/production/db2bced0a14e9b65aa15357cae7799696903a8d4.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <img className="box" src={con2_1} alt="" />
             <p className="title a">
               <i>IN SHAPE</i>
             </p>

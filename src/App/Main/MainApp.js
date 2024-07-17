@@ -21,10 +21,8 @@ import g from '../../images/logo/L_G.png';
 
 const MainApp = () => {
   useEffect(() => {
-
     /* main 첫 화면  */
     if (typeof window !== 'undefined') {
-
       const visual = gsap.timeline({
         scrollTrigger: {
           trigger: '.visual',
@@ -145,7 +143,7 @@ const MainApp = () => {
             {
               transform: 'rotateX(-10deg) scale(0.9)',
               transformOrigin: 'top',
-              filter: 'brightness(0.3)',
+              filter: 'brightness(0.8)',
             },
 
             0

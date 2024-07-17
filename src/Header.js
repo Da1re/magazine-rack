@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 
-import j from './images/logo/S_J.png';
+/* import j from './images/logo/S_J.png';
 import y from './images/logo/S_Y.png';
 import o from './images/logo/S_O.png';
 import u from './images/logo/S_U.png';
 import n from './images/logo/S_N.png';
-import g from './images/logo/S_G.png';
+import g from './images/logo/S_G.png'; */
+import mainLogo from './images/logo/Main_Logo.png';
 
 const Header = () => {
   useEffect(() => {
@@ -26,8 +27,8 @@ const Header = () => {
   return (
     <header>
       <div className="inner">
-        <a href="/" className="logo">
-          <span>
+        <a href={process.env.PUBLIC_URL} className="logo">
+          {/*  <span>
             <img src={j} alt="a" />
           </span>
           <span>
@@ -44,22 +45,25 @@ const Header = () => {
           </span>
           <span>
             <img src={g} alt="f" />
+          </span> */}
+          <span>
+            <img src={mainLogo} alt="" />
           </span>
         </a>
         <nav className="gnb">
           <p className="menuOpen">MENU</p>
           <ul className="menuBox">
             <li>
-              <a href="/">Home</a>
+              <a href={process.env.PUBLIC_URL}>Home</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href={process.env.PUBLIC_URL}>About</a>
             </li>
             <li>
-              <a href="/">Work</a>
+              <a href={process.env.PUBLIC_URL}>Work</a>
             </li>
             <li>
-              <a href="/">Portfolio UX</a>
+              <a href={process.env.PUBLIC_URL}>Portfolio UX</a>
             </li>
           </ul>
         </nav>

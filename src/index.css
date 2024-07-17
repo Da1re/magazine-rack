@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
 /* 00. Reset */
 * {
@@ -97,15 +98,15 @@ img {
 }
 
 body {
-  font-family: 'Releway', sans-serif;
+  font-family: 'Pretendard', 'Releway', sans-serif;
   font-size: 16px;
   letter-spacing: -0.01em;
 }
 .wrap {
   position: relative;
   margin: 0 auto;
-  background-color: #141212;
-  color: #fff;
+  background-color: #f8f8f8;
+  color: #0358d5;
   padding-bottom: 100px;
   /* overflow: hidden; */
 }
@@ -158,7 +159,7 @@ header .inner .logo span {
   padding: 0 1px;
 }
 header .inner .logo span img {
-  width: 100%;
+  width: 95px;
 }
 
 /* Header Menu toggle CSS */
@@ -168,6 +169,7 @@ header .gnb {
 }
 header .gnb .menuOpen {
   font-size: 10px;
+  font-weight: 600;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -175,13 +177,14 @@ header .gnb .menuOpen {
   padding: 30px 0;
   z-index: 10;
   cursor: pointer;
+  color: #141212;
 }
 
 header .gnb .menuOpen:before {
   content: '';
   width: 70px;
   height: 1px;
-  background: #fff;
+  background: #141212;
   position: absolute;
   left: 50%;
   top: 15px;
@@ -198,7 +201,7 @@ header .gnb .menuBox {
   left: 50%;
   transform: translateX(-50%);
   top: -1300%;
-  background-color: rgba(55, 55, 55, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(30px);
   border-radius: 5px;
   padding: 100px 0 30px;
@@ -213,6 +216,7 @@ header .gnb .menuBox li a {
   font-size: 40px;
   transform: translateY(-100px);
   transition: all 0.6s;
+  color: #141212;
 }
 
 header .gnb .menuBox.on {
@@ -253,7 +257,7 @@ footer .inner {
 }
 footer .inner .box {
   padding: 50px 0 0;
-  background: rgba(55, 55, 55, 0.4);
+  background: rgba(247, 247, 247, 0.26);
   backdrop-filter: blur(100px);
   display: flex;
   flex-direction: column;
@@ -266,15 +270,18 @@ footer .inner .box .mainTextBox {
   text-align: center;
 }
 footer .inner .box .mainTextBox h2 {
-  font-size: 120px;
+  font-size: 80px;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -10px;
   font-weight: normal;
   margin-bottom: 30px;
+  color: #141212;
 }
-footer .inner .box .mainTextBox p span {
-  opacity: 0.5;
+footer .inner .box .mainTextBox p {
+  color: #141212;
   display: block;
+  letter-spacing: -1.2px;
+  font-weight: 600;
 }
 
 /* footer talkBtn */
@@ -288,7 +295,7 @@ footer .inner .box .talkBtn a {
   width: 95px;
   height: 95px;
   border-radius: 100%;
-  box-shadow: 0 0 0 13px #1c1c1c, 0 0 50px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 13px #f8f8f8, 0 0 50px rgba(255, 255, 255, 0.3);
 }
 footer .inner .box .talkBtn a span {
   display: block;
@@ -296,7 +303,7 @@ footer .inner .box .talkBtn a span {
   height: 95%;
   margin: 2.5% auto;
   border-radius: 100%;
-  background: #e36840;
+  background: #0358d5;
   transition: all 0.3s;
 }
 footer .inner .box .talkBtn a:hover span {
@@ -316,8 +323,10 @@ footer .inner .box .btnBox .btn {
   margin: 20px;
   padding: 10px;
   background: none;
-  color: #fff;
+  color: #0358d5;
   opacity: 0.5;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 footer .inner .box .btnBox .btn:hover {
@@ -329,7 +338,8 @@ footer .copyright {
   flex-direction: row;
   text-align: center;
   padding-top: 25px;
-  font-size: 14px;
+  font-size: 12px;
+  color: #141212;
 }
 
 /* footer logoWrap */
@@ -381,6 +391,7 @@ footer .logoWrap span img {
 }
 .visual .inner .mainText span i {
   display: block;
+  margin-top: 50px;
 }
 
 /* subText */
@@ -417,7 +428,7 @@ footer .logoWrap span img {
 /*con1 box*/
 .con1 .box {
   padding: 60px;
-  background-color: rgba(55, 55, 55, 0.4);
+  background-color: rgba(255, 255, 255, 0.219);
   backdrop-filter: blur(100px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -448,7 +459,7 @@ footer .logoWrap span img {
   width: 110px;
   height: 110px;
   border-radius: 100%;
-  background: #e36840;
+  background: #ff7900;
   position: absolute;
   right: 0;
   top: 0;
@@ -520,12 +531,13 @@ footer .logoWrap span img {
   max-width: 550px;
   margin-right: 20px;
 }
-.con2 .mainTextBox .box video {
+.con2 .mainTextBox .box img {
   width: 100%;
 }
 /* con2 mainTextBox title */
 .con2 .mainTextBox .title {
   font-size: 120px;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -5px;
   text-align: right;
@@ -551,6 +563,7 @@ footer .logoWrap span img {
 .con2 .subTextBox .subText {
   max-width: 600px;
   font-size: 22px;
+  color: #141212;
 }
 .con2 .subTextBox .subText p:nth-child(1) {
   margin-bottom: 20px;
@@ -585,7 +598,7 @@ footer .logoWrap span img {
 }
 .con3 .textBox h4 {
   font-size: 60px;
-  font-weight: normal;
+  color: #141212;
   position: -webkit-sticky;
   position: sticky;
   top: 50%;
@@ -597,51 +610,77 @@ footer .logoWrap span img {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* 기본적으로 nowrap이라 안넘어가서 wrap으로 지정 */
+  flex-wrap: wrap;
   perspective: 900px; /* 원근감 */
   overflow: hidden;
 }
-/* overflow: hidden;을 주는 이유는 스크롤트리거를 작성하게되면 가로스크롤이
-생겨서 이를 가리기위해 작성함 */
+
 .con3 .listBox li {
   width: 32.2%;
+  height: 25em;
+  cursor: pointer;
+  position: relative;
 }
-.con3 .listBox li .img {
+
+.con3 .listBox li p {
   background: var(--sub-color);
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30% 0;
+  position: relative;
+  overflow: hidden;
+  max-height: 80%;
 }
+
+.con3 .listBox li p:hover {
+  opacity: 0.7;
+}
+
+.con3 .listBox li .img {
+  padding: 10% 0;
+}
+
+.con3 .listBox li .projectImg {
+  padding: 12% 5% 12%;
+  background: #f8f8f8;
+}
+
 .con3 .listBox li .img img {
   width: 40%;
+  padding: 17% 0;
+}
+.con3 .listBox li .projectImg img {
+  max-height: 10rem;
+  width: 100%;
 }
 
 .con3 .listBox li h4 {
   display: flex;
   justify-content: space-between;
   margin: 15px 0 50px;
-  font-weight: normal;
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  color: #141212;
 }
 .con3 .listBox li h4 span.b {
-  opacity: 0.5;
+  opacity: 0.6;
+  font-weight: normal;
 }
 
 .con3 .listBox li[datacolor='a'] {
-  --sub-color: #d1dbfd;
+  --sub-color: #d1dbfd9a;
 }
 .con3 .listBox li[datacolor='b'] {
-  --sub-color: #90c3cd;
+  --sub-color: #90c3cd69;
 }
 .con3 .listBox li[datacolor='c'] {
-  --sub-color: #ff764a;
+  --sub-color: #ff774a98;
 }
 .con3 .listBox li[datacolor='d'] {
-  --sub-color: #47b172;
+  --sub-color: #47b17185;
 }
 .con3 .listBox li[datacolor='e'] {
-  --sub-color: #ffb84f;
+  --sub-color: #ffb94f85;
 }
 
 /* ****************************************************************** */
@@ -688,8 +727,8 @@ footer .logoWrap span img {
   perspective: 900px;
 }
 .con4 .listBox .box {
-  background: #fff;
-  padding: 50px 80px 60px;
+  background: #f8f8f8c2;
+  padding: 50px 130px 60px;
   margin-bottom: 35px;
   color: #141212;
   display: grid;
@@ -701,39 +740,48 @@ footer .logoWrap span img {
 }
 .con4 .listBox .box h2 {
   font-size: 40px;
-  font-weight: normal;
-  letter-spacing: -2px;
+  font-weight: 600;
+  letter-spacing: -3px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.3px solid #3f3f3f9f;
   grid-column: 1/3;
   margin-bottom: 100px;
 }
 .con4 .listBox .box h3 {
-  font-size: 300px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 0.9;
   align-self: flex-end;
+  opacity: 0.8;
 }
 .con4 .listBox .box .text {
   align-self: flex-end;
+  padding: 20px;
   line-height: 1.4;
+  border-left: 0.3px solid #3f3f3f9f;
 }
 .con4 .listBox .box h4 {
   margin-bottom: 20px;
+  letter-spacing: -2px;
   line-height: 1.2;
+  font-weight: 600;
+  font-size: large;
 }
 .con4 .listBox .box p {
-  opacity: 0.5;
+  line-height: 1.2;
+  font-weight: lighter;
+  font-size: medium;
+  letter-spacing: -1.2px;
 }
 
 .con4 .listBox .box.a h3 {
-  color: #ffb84f;
+  color: #ffb94f;
 }
 .con4 .listBox .box.b h3 {
-  color: #90c3cd;
+  color: #47b171;
 }
 .con4 .listBox .box.c h3 {
-  color: #47b172;
+  color: #90c3cd;
 }
 
 /* con4 subTextBox */
@@ -745,6 +793,7 @@ footer .logoWrap span img {
   max-width: 600px;
   font-size: 22px;
   grid-column-start: 2;
+  color: #141212;
 }
 .con4 .subTextBox .subText p:nth-child(1) {
   margin-bottom: 20px;
