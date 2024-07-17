@@ -769,8 +769,8 @@ footer .logoWrap span img {
 }
 .con4 .listBox .box p {
   line-height: 1.2;
-  font-weight: lighter;
-  font-size: medium;
+  font-weight: light;
+  font-size: 500;
   letter-spacing: -1.2px;
 }
 
