@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/magazine-rack/static/css/main.ae8082a7.css",
+    "main.css": "/magazine-rack/static/css/main.5bde1f29.css",
     "main.js": "/magazine-rack/static/js/main.9505394a.js",
     "static/js/453.c5eb484e.chunk.js": "/magazine-rack/static/js/453.c5eb484e.chunk.js",
     "static/media/con2_1.jpg": "/magazine-rack/static/media/con2_1.f836d4e0f6980cf9de3b.jpg",
@@ -8,12 +8,12 @@
     "static/media/L_G.png": "/magazine-rack/static/media/L_G.a7a5d074bc3787d38ba8.png",
     "static/media/img6.png": "/magazine-rack/static/media/img6.bb8120e37d81dcd747bb.png",
     "index.html": "/magazine-rack/index.html",
-    "main.ae8082a7.css.map": "/magazine-rack/static/css/main.ae8082a7.css.map",
+    "main.5bde1f29.css.map": "/magazine-rack/static/css/main.5bde1f29.css.map",
     "main.9505394a.js.map": "/magazine-rack/static/js/main.9505394a.js.map",
     "453.c5eb484e.chunk.js.map": "/magazine-rack/static/js/453.c5eb484e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae8082a7.css",
+    "static/css/main.5bde1f29.css",
     "static/js/main.9505394a.js"
   ]
 }
