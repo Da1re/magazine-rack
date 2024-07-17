@@ -16,7 +16,7 @@
 
 
 ## 🌏
-[Magazine Rack Portfolio](https://username.github.io/repository-name)
+[Magazine Rack Portfolio](https://Da1re.github.io/magazine-rack)
 
 
 
