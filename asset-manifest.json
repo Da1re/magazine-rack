@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/magazine-rack/static/css/main.cb76d21d.css",
+    "main.css": "/magazine-rack/static/css/main.1ae1e208.css",
     "main.js": "/magazine-rack/static/js/main.e0234554.js",
     "static/js/453.c5eb484e.chunk.js": "/magazine-rack/static/js/453.c5eb484e.chunk.js",
     "static/media/flower.gif": "/magazine-rack/static/media/flower.41a4b2f5025af3f1def1.gif",
@@ -9,12 +9,12 @@
     "static/media/L_G.png": "/magazine-rack/static/media/L_G.a7a5d074bc3787d38ba8.png",
     "index.html": "/magazine-rack/index.html",
     "static/media/21_icon.svg": "/magazine-rack/static/media/21_icon.35673806ba68a31457f98df515b2fb1f.svg",
-    "main.cb76d21d.css.map": "/magazine-rack/static/css/main.cb76d21d.css.map",
+    "main.1ae1e208.css.map": "/magazine-rack/static/css/main.1ae1e208.css.map",
     "main.e0234554.js.map": "/magazine-rack/static/js/main.e0234554.js.map",
     "453.c5eb484e.chunk.js.map": "/magazine-rack/static/js/453.c5eb484e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb76d21d.css",
+    "static/css/main.1ae1e208.css",
     "static/js/main.e0234554.js"
   ]
 }
