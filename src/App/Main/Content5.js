@@ -7,21 +7,15 @@ import img2 from '../../images/img2.png';
 import img3 from '../../images/img3.png';
 import img4 from '../../images/img4.png';
 import img5 from '../../images/img5.png';
-import img6 from '../../images/img6.png';
+
 
 const Projects = [
   { title: 'Web UI/UX', type: 'User Activity', year: '2023', imgSrc: img0 },
   { title: 'Web UI/UX', type: 'Team Activity', year: '2023', imgSrc: img1 },
   { title: 'Web UI/UX', type: 'Payment details', year: '2023', imgSrc: img2 },
-  { title: 'Web UI/UX', type: 'Account Setting', year: '2024', imgSrc: img3 },
+  { title: 'Web UI/UX', type: 'Account Setting', year: '2023', imgSrc: img3 },
   { title: 'Logo', type: 'Platform Circle Logo', year: '2023', imgSrc: img4 },
   { title: 'Logo', type: 'Platform Main Logo', year: '2023', imgSrc: img5 },
-  {
-    title: 'Logo',
-    type: '',
-    year: '',
-    imgSrc: img6,
-  },
 ];
 
 const Content5 = () => {

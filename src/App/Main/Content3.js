@@ -26,30 +26,28 @@ const projectList = [
   },
   {
     datacolor: 'd',
-    title: '스마트 소비재 부품 제조 협업 플랫폼',
+    title: 'Annotation Tool Lite Ver.',
     year: 2023,
     imgSrc: '',
   },
   {
     datacolor: 'e',
-    title: '스마트 소비재 부품 제조 협업 플랫폼',
-    year: 2024,
+    title: '',
+    year: '',
     imgSrc: '',
   },
   {
     datacolor: 'a',
-    title: 'Annotation Tool Lite Ver.',
-    year: 2024,
+    title: '',
+    year: '',
     imgSrc: '',
   },
-  { datacolor: 'b', title: 'Project', year: 2024 },
-  { datacolor: 'c', title: 'Project', year: 2024 },
-  { datacolor: 'd', title: 'Project', year: 2024 },
+  { datacolor: 'b', title: '', year: '' },
+  { datacolor: 'c', title: '', year: '' },
+  { datacolor: 'd', title: '', year: '' },
 ];
 
 const Content3 = () => {
- 
-
   return (
     <section className="con3">
       <div className="inner">

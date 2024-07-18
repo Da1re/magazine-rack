@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="inner">
+      <div className="inner opacity">
         <a href={process.env.PUBLIC_URL} className="logo">
           {/*  <span>
             <img src={j} alt="a" />

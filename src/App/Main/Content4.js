@@ -1,4 +1,5 @@
 import React from 'react';
+import flower from '../../images/flower.gif';
 
 const Content4 = () => {
   return (
@@ -12,12 +13,8 @@ const Content4 = () => {
             <i>PRODUCTION</i>
           </p>
           <div className="in">
-            <video className="box" playinline="" autoPlay="" loop="" muted="">
-              <source
-                src="https://cdn.sanity.io/files/u6q95fqm/production/c0594d11b2a34d37493ac112d3cb8d1d315a129e.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <img src={flower} alt="" />
+
             <p className="title c">
               <i>DIFFUSION</i>
             </p>
@@ -69,7 +66,7 @@ const Content4 = () => {
               <p>
                 CNC, 금형 등 온라인으로 상담 및 견적을 요청할 수 있는 제조 협업
                 사이트 개발 <br />
-                (기여도 35% | 2023.07.01 ~ 2024.01.31)
+                (기여도 30% | 2023.07.01 ~ 2024.01.31)
                 <br />
                 <br />
                 <br />
@@ -107,8 +104,9 @@ const Content4 = () => {
                 <br />
               </h4>
               <p>
-                AI Dataset Web & Annotation Tool 유지보수 <br />
-                (기여도 10% & 100% | 2023.07.01 ~ 2024.01.31)
+                1️⃣ AI Dataset Web 및 Annotation Tool 유지보수, 2️⃣ Annotation
+                Tool Lite ver. 개발 <br />
+                (기여도 1️⃣ 10%, 2️⃣ 100% | 2023.07.01 ~ 2024.01.31)
                 <br />
                 <br />
                 <br />
