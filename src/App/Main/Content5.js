@@ -1,41 +1,34 @@
-import React, { useEffect } from 'react';
-import gsap from 'gsap';
+import gsap from "gsap";
+import { useEffect } from "react";
 
-import img0 from '../../images/img0.png';
-import img1 from '../../images/img1.png';
-import img2 from '../../images/img2.png';
-import img3 from '../../images/img3.png';
-import img4 from '../../images/img4.png';
-import img5 from '../../images/img5.png';
-
+import img0 from "../../images/img0.png";
+import img1 from "../../images/img1.png";
+import img2 from "../../images/img2.png";
+import img3 from "../../images/img3.png";
+import img4 from "../../images/img4.png";
+import img5 from "../../images/img5.png";
 
 const Projects = [
-  { title: 'Web UI/UX', type: 'User Activity', year: '2023', imgSrc: img0 },
-  { title: 'Web UI/UX', type: 'Team Activity', year: '2023', imgSrc: img1 },
-  { title: 'Web UI/UX', type: 'Payment details', year: '2023', imgSrc: img2 },
-  { title: 'Web UI/UX', type: 'Account Setting', year: '2023', imgSrc: img3 },
-  { title: 'Logo', type: 'Platform Circle Logo', year: '2023', imgSrc: img4 },
-  { title: 'Logo', type: 'Platform Main Logo', year: '2023', imgSrc: img5 },
+  { title: "Web UI/UX", type: "User Activity", year: "2023", imgSrc: img0 },
+  { title: "Web UI/UX", type: "Team Activity", year: "2023", imgSrc: img1 },
+  { title: "Web UI/UX", type: "Payment details", year: "2023", imgSrc: img2 },
+  { title: "Web UI/UX", type: "Account Setting", year: "2023", imgSrc: img3 },
+  { title: "Logo", type: "Platform Circle Logo", year: "2023", imgSrc: img4 },
+  { title: "Logo", type: "Platform Main Logo", year: "2023", imgSrc: img5 },
 ];
 
 const Content5 = () => {
   useEffect(() => {
-    const listBox = document.querySelectorAll('.con5 .listBox li');
-    const imgBox = document.querySelector('.con5 .imgBox');
-    const img = document.querySelector('.con5 .imgBox img');
-
-    /*     if (!listBox.length || !img || !imgBox) {
-      console.error('DOM 요소를 찾을 수 없습니다.');
-      return;
-    }
- */
+    const listBox = document.querySelectorAll(".con5 .listBox li");
+    const imgBox = document.querySelector(".con5 .imgBox");
+    const img = document.querySelector(".con5 .imgBox img");
 
     gsap.timeline({
       scrollTrigger: {
-        trigger: '.con5',
-        start: '0% 100%',
-        end: '100% 0%',
-        toggleClass: { targets: '.wrap', className: 'on' },
+        trigger: ".con5",
+        start: "0% 100%",
+        end: "100% 0%",
+        toggleClass: { targets: ".wrap", className: "on" },
       },
     });
 
@@ -64,22 +57,22 @@ const Content5 = () => {
 
     listBox.forEach((item, i) => {
       const mouseOverHandler = handleMouseOver(i);
-      item.addEventListener('mouseover', mouseOverHandler);
-      item.addEventListener('mousemove', handleMouseMove);
-      item.addEventListener('mouseout', handleMouseOut);
+      item.addEventListener("mouseover", mouseOverHandler);
+      item.addEventListener("mousemove", handleMouseMove);
+      item.addEventListener("mouseout", handleMouseOut);
 
       return () => {
-        item.removeEventListener('mouseover', mouseOverHandler);
-        item.removeEventListener('mousemove', handleMouseMove);
-        item.removeEventListener('mouseout', handleMouseOut);
+        item.removeEventListener("mouseover", mouseOverHandler);
+        item.removeEventListener("mousemove", handleMouseMove);
+        item.removeEventListener("mouseout", handleMouseOut);
       };
     });
 
     return () => {
       listBox.forEach((item) => {
-        item.removeEventListener('mouseover', handleMouseOver);
-        item.removeEventListener('mousemove', handleMouseMove);
-        item.removeEventListener('mouseout', handleMouseOut);
+        item.removeEventListener("mouseover", handleMouseOver);
+        item.removeEventListener("mousemove", handleMouseMove);
+        item.removeEventListener("mouseout", handleMouseOut);
       });
     };
   }, []);
