@@ -9,6 +9,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
     "animejs": "^3.2.2",
     "autoprefixer": "^10.4.21",
     "gsap": "^3.12.5",
@@ -19,6 +23,7 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "typeit-react": "^2.7.1",
+    "typescript": "^5.8.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
