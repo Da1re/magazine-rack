@@ -1,14 +1,9 @@
 import { useEffect } from "react";
-
-/* import j from './images/logo/S_J.png';
-import y from './images/logo/S_Y.png';
-import o from './images/logo/S_O.png';
-import u from './images/logo/S_U.png';
-import n from './images/logo/S_N.png';
-import g from './images/logo/S_G.png'; */
+import { useNavigate } from "react-router-dom";
 import mainLogo from "./images/logo/Main_Logo.png";
 
 const Header = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const menuOpen = document.querySelector(".gnb .menuOpen");
     const menuBox = document.querySelector(".gnb .menuBox");
@@ -28,24 +23,6 @@ const Header = () => {
     <header>
       <div className="inner opacity">
         <a href={process.env.PUBLIC_URL} className="logo">
-          {/*  <span>
-            <img src={j} alt="a" />
-          </span>
-          <span>
-            <img src={y} alt="b" />
-          </span>
-          <span>
-            <img src={o} alt="c" />
-          </span>
-          <span>
-            <img src={u} alt="d" />
-          </span>
-          <span>
-            <img src={n} alt="e" />
-          </span>
-          <span>
-            <img src={g} alt="f" />
-          </span> */}
           <span>
             <img src={mainLogo} alt="" />
           </span>
@@ -93,7 +70,16 @@ const Header = () => {
               </p>
             </li>
             <li>
-              <a href={process.env.PUBLIC_URL}>TypeScript</a>
+              <p
+                style={{
+                  fontSize: "40px",
+                  color: "#141212",
+                  cursor: "pointer",
+                }}
+                onClick={() => navigate("/typeScript")}
+              >
+                TypeScript
+              </p>
             </li>
           </ul>
         </nav>
