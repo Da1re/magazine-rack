@@ -1,5 +1,4 @@
-import React from 'react';
-import flower from '../../images/flower.gif';
+import flower from "../../images/flower.gif";
 
 const Content4 = () => {
   return (
@@ -55,7 +54,7 @@ const Content4 = () => {
           <li className="box b">
             <h2>
               스마트 소비재 부품 제조 협업 플랫폼 기술 개발 (스마트 제조혁신
-              기술개발사업, R&D)
+              기술개발사업)
             </h2>
             <h3>React</h3>
             <div className="text">
