@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 /* 00. Reset */
 * {
@@ -103,7 +103,7 @@ img {
 }
 
 body {
-  font-family: 'Pretendard', 'Releway', sans-serif;
+  font-family: "Pretendard", "Releway", sans-serif;
   font-size: 16px;
   letter-spacing: -0.01em;
   -webkit-user-select: none;
@@ -316,7 +316,7 @@ header .gnb .menuOpen {
 }
 
 header .gnb .menuOpen:before {
-  content: '';
+  content: "";
   width: 70px;
   height: 1px;
   background: #141212;
@@ -640,7 +640,7 @@ footer .logoWrap span img {
 }
 
 .con1 .textAni:before {
-  content: '';
+  content: "";
   width: 110px;
   height: 110px;
   border-radius: 100%;
@@ -688,7 +688,7 @@ footer .logoWrap span img {
   padding: 40px 50px;
 }
 .con2 .inner:before {
-  content: '';
+  content: "";
   width: 95%;
   height: 1px;
   background: #3b3b3b;
@@ -853,19 +853,19 @@ footer .logoWrap span img {
   font-weight: normal;
 }
 
-.con3 .listBox li[datacolor='a'] {
+.con3 .listBox li[datacolor="a"] {
   --sub-color: #d1dbfd9a;
 }
-.con3 .listBox li[datacolor='b'] {
+.con3 .listBox li[datacolor="b"] {
   --sub-color: #90c3cd69;
 }
-.con3 .listBox li[datacolor='c'] {
+.con3 .listBox li[datacolor="c"] {
   --sub-color: #ff774a98;
 }
-.con3 .listBox li[datacolor='d'] {
+.con3 .listBox li[datacolor="d"] {
   --sub-color: #47b17185;
 }
-.con3 .listBox li[datacolor='e'] {
+.con3 .listBox li[datacolor="e"] {
   --sub-color: #ffb94f85;
 }
 

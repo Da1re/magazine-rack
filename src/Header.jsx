@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
 
 /* import j from './images/logo/S_J.png';
 import y from './images/logo/S_Y.png';
@@ -6,21 +6,21 @@ import o from './images/logo/S_O.png';
 import u from './images/logo/S_U.png';
 import n from './images/logo/S_N.png';
 import g from './images/logo/S_G.png'; */
-import mainLogo from './images/logo/Main_Logo.png';
+import mainLogo from "./images/logo/Main_Logo.png";
 
 const Header = () => {
   useEffect(() => {
-    const menuOpen = document.querySelector('.gnb .menuOpen');
-    const menuBox = document.querySelector('.gnb .menuBox');
+    const menuOpen = document.querySelector(".gnb .menuOpen");
+    const menuBox = document.querySelector(".gnb .menuBox");
 
     const toggleMenu = () => {
-      menuBox.classList.toggle('on');
+      menuBox.classList.toggle("on");
     };
 
-    menuOpen.addEventListener('click', toggleMenu);
+    menuOpen.addEventListener("click", toggleMenu);
 
     return () => {
-      menuOpen.removeEventListener('click', toggleMenu);
+      menuOpen.removeEventListener("click", toggleMenu);
     };
   }, []);
 
@@ -57,13 +57,43 @@ const Header = () => {
               <a href={process.env.PUBLIC_URL}>Home</a>
             </li>
             <li>
-              <a href={process.env.PUBLIC_URL}>About</a>
+              {/*              <a href={process.env.PUBLIC_URL}>About</a> */}
+              <p
+                style={{
+                  color: "#d3d3d3",
+                  fontSize: "40px",
+                  display: "block",
+                }}
+              >
+                About
+              </p>
             </li>
             <li>
-              <a href={process.env.PUBLIC_URL}>Work</a>
+              {/*  <a href={process.env.PUBLIC_URL}>Work</a> */}
+              <p
+                style={{
+                  color: "#d3d3d3",
+                  fontSize: "40px",
+                  display: "block",
+                }}
+              >
+                Work
+              </p>
             </li>
             <li>
-              <a href={process.env.PUBLIC_URL}>Portfolio UX</a>
+              {/*   <a href={process.env.PUBLIC_URL}>Portfolio UX</a> */}
+              <p
+                style={{
+                  color: "#d3d3d3",
+                  fontSize: "40px",
+                  display: "block",
+                }}
+              >
+                Portfolio UX
+              </p>
+            </li>
+            <li>
+              <a href={process.env.PUBLIC_URL}>TypeScript</a>
             </li>
           </ul>
         </nav>
