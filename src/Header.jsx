@@ -81,6 +81,19 @@ const Header = () => {
                 TypeScript
               </p>
             </li>
+            <li>
+              <p
+                className="hover:text-[#383535]"
+                style={{
+                  fontSize: "40px",
+                  color: "#141212",
+                  cursor: "pointer",
+                }}
+                onClick={() => navigate("/editor")}
+              >
+                Editor
+              </p>
+            </li>
           </ul>
         </nav>
       </div>
