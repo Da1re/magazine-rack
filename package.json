@@ -4,11 +4,17 @@
   "private": true,
   "homepage": "https://Da1re.github.io/magazine-rack",
   "dependencies": {
+    "@editorjs/editorjs": "^2.29.1",
+    "@editorjs/header": "^2.8.8",
+    "@editorjs/list": "^1.10.0",
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^2.1.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tiptap/pm": "^2.14.0",
+    "@tiptap/react": "^2.14.0",
+    "@tiptap/starter-kit": "^2.14.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.30",
     "@types/react": "^19.1.6",
@@ -22,8 +28,8 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "typeit-react": "^2.7.1",
-    "typescript": "^5.8.3",
+    "typeit-react": "^2.6.0",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
