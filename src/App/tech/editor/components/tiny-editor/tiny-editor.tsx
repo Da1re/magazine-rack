@@ -18,19 +18,33 @@ export function TinyEditor() {
           tinymceScriptSrc={`${process.env.PUBLIC_URL}/tinymce/tinymce.min.js`}
           onInit={(_, editor) => (editorRef.current = editor)}
           init={{
-            height: 300,
-            menubar: true,
+            height: 500,
+            menubar: false,
             plugins: [
-              "advlist autolink lists link image charmap preview anchor",
-              "searchreplace visualblocks code fullscreen",
-              "insertdatetime media table help wordcount code",
+              "advlist",
+              "autolink",
+              "lists",
+              "link",
+              "image",
+              "charmap",
+              "anchor",
+              "searchreplace",
+              "visualblocks",
+              "code",
+              "insertdatetime",
+              "media",
+              "table",
+              "fontfamily",
+              "fontsize",
             ],
             toolbar:
-              "undo redo | blocks | bold italic underline strikethrough subscript superscript | " +
-              "forecolor backcolor | alignleft aligncenter alignright alignjustify | " +
-              "bullist numlist outdent indent | link image media table blockquote code | removeformat",
+              "fontfamily fontsize  bold italic underline strikethrough subscript superscriptforecolor backcolor " +
+              "bullist numlist  | table blockquote link  image media code |alignleft aligncenter alignright alignjustify outdent indent| removeformat undo redo ",
+
             branding: false,
             promotion: false,
+            resize: false,
+            statusbar: false,
           }}
         />
 
