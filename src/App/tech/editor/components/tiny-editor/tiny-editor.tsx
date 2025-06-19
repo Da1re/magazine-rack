@@ -1,20 +1,23 @@
 import { Editor } from "@tinymce/tinymce-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Editor as TinyMCEEditor } from "tinymce";
 
-// HTML 이스케이프 함수
 function escapeHtml(html: string): string {
   return html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-// HTML 언이스케이프 함수
 function unescapeHtml(escaped: string): string {
   return escaped.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 }
 
-export function TinyEditor() {
+type TinyEditorProps = {
+  content: string;
+  setContent: (value: string) => void;
+};
+
+export function TinyEditor({ content, setContent }: TinyEditorProps) {
   const [isHtmlMode, setIsHtmlMode] = useState<boolean>(false);
-  const [content, setContent] = useState<string>("<p>안녕하세요</p>");
+
   const editorRef = useRef<TinyMCEEditor | null>(null);
 
   // 모드 전환 함수
@@ -38,8 +41,14 @@ export function TinyEditor() {
     }
   };
 
+  useEffect(() => {
+    if (!isHtmlMode && editorRef.current) {
+      editorRef.current.setContent(content);
+    }
+  }, [content, isHtmlMode]);
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-full">
+    <div className="flex flex-col items-center justify-center h-fit w-full">
       <p className="text-3xl font-bold mb-10 text-blue-500">TinyMCE Editor</p>
       <div className="relative w-full p-8 bg-white rounded-2xl shadow-xl ring-1 ring-gray-200">
         <Editor
