@@ -1,45 +1,103 @@
 import { Editor } from "@tinymce/tinymce-react";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Editor as TinyMCEEditor } from "tinymce";
 
-export function TinyEditor() {
+function escapeHtml(html: string): string {
+  return html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function unescapeHtml(escaped: string): string {
+  return escaped.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+}
+
+type TinyEditorProps = {
+  content: string;
+  setContent: (value: string) => void;
+};
+
+export function TinyEditor({ content, setContent }: TinyEditorProps) {
+  const [isHtmlMode, setIsHtmlMode] = useState<boolean>(false);
+
   const editorRef = useRef<TinyMCEEditor | null>(null);
-  const log = () => {
-    if (editorRef.current) {
-      // getContent()로 HTML 가져오기
-      console.log(editorRef.current.getContent());
+
+  // 모드 전환 함수
+  const toggleMode = (): void => {
+    const editor: TinyMCEEditor | null = editorRef.current;
+    if (!editor) return;
+
+    if (!isHtmlMode) {
+      // 위즈윅 → HTML
+      const html: string = editor.getContent();
+      setContent(html);
+      editor.setContent(`<pre>${escapeHtml(html)}</pre>`);
+      setIsHtmlMode(true);
+    } else {
+      // HTML → 위즈윅
+      const code: string = editor.getContent({ format: "text" });
+      const html: string = unescapeHtml(code.replace(/^<pre>|<\/pre>$/g, ""));
+      setContent(html);
+      editor.setContent(html);
+      setIsHtmlMode(false);
     }
   };
+
+  useEffect(() => {
+    if (!isHtmlMode && editorRef.current) {
+      editorRef.current.setContent(content);
+    }
+  }, [content, isHtmlMode]);
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-full">
+    <div className="flex flex-col items-center justify-center h-fit w-full">
       <p className="text-3xl font-bold mb-10 text-blue-500">TinyMCE Editor</p>
-      <div className="relative w-full  p-8 bg-white rounded-2xl shadow-xl ring-1 ring-gray-200">
+      <div className="relative w-full p-8 bg-white rounded-2xl shadow-xl ring-1 ring-gray-200">
         <Editor
           tinymceScriptSrc={`${process.env.PUBLIC_URL}/tinymce/tinymce.min.js`}
-          onInit={(_, editor) => (editorRef.current = editor)}
+          onInit={(_: unknown, editor: TinyMCEEditor) => {
+            editorRef.current = editor;
+            editor.setContent(content);
+          }}
           init={{
-            height: 300,
-            menubar: true,
+            language: "ko_KR",
+            language_url: `${process.env.PUBLIC_URL}/tinymce/langs/ko_KR.js`,
+            height: 500,
+            menubar: false,
             plugins: [
-              "advlist autolink lists link image charmap preview anchor",
-              "searchreplace visualblocks code fullscreen",
-              "insertdatetime media table help wordcount code",
+              "advlist",
+              "autolink",
+              "lists",
+              "link",
+              "image",
+              "charmap",
+              "anchor",
+              "searchreplace",
+              "visualblocks",
+              "code",
+              "insertdatetime",
+              "media",
+              "table",
+              "fontfamily",
+              "fontsize",
             ],
             toolbar:
-              "undo redo | blocks | bold italic underline strikethrough subscript superscript | " +
-              "forecolor backcolor | alignleft aligncenter alignright alignjustify | " +
-              "bullist numlist outdent indent | link image media table blockquote code | removeformat",
+              "fontfamily fontsize bold italic underline strikethrough subscript superscript forecolor backcolor " +
+              "bullist numlist | table blockquote link image media code | alignleft aligncenter alignright alignjustify outdent indent | removeformat undo redo ",
             branding: false,
             promotion: false,
+            resize: false,
+            statusbar: false,
           }}
         />
 
-        <button
-          onClick={log}
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
-        >
-          로그 확인
-        </button>
+        <div className="flex gap-2 mt-4">
+          <button
+            onClick={toggleMode}
+            className="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 transition-all rounded-full"
+            type="button"
+          >
+            {isHtmlMode ? "위즈윅 모드로 전환" : "HTML 코드로 전환"}
+          </button>
+        </div>
       </div>
     </div>
   );
