@@ -39,7 +39,7 @@ export function EditorJs() {
     <div className="flex flex-col min-h-[500px] w-1/2 items-center justify-center">
       <p className="text-3xl font-bold mb-10 text-blue-500">Editor.js</p>
       <div className="relative w-full max-w-2xl p-8 bg-white rounded-2xl shadow-xl ring-1 h-96 ring-gray-200">
-        <div className="w-full overflow-auto max-h-96 px-20">
+        <div className="w-full overflow-auto max-h-80 px-10">
           <div id="editorjs" className="" />
         </div>
       </div>

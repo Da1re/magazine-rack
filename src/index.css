@@ -84,6 +84,15 @@ a {
 li {
   list-style: none;
 }
+.ProseMirror ul,
+.ProseMirror ol {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+}
+.ProseMirror li {
+  list-style-type: disc !important;
+}
+
 address,
 em,
 i {
