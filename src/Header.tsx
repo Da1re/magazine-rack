@@ -145,7 +145,7 @@ const Header = () => {
               <button
                 key={lng}
                 onClick={() => i18n.changeLanguage(lng as LngKey)}
-                className="px-2 py-1 rounded"
+                className="px-2 py-1 rounded text-sm"
               >
                 {nativeName}
               </button>
