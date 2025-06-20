@@ -4,12 +4,21 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import mainLogo from "./images/logo/Main_Logo.png";
 
-const lngs = {
+interface LanguageInfo {
+  nativeName: string;
+}
+const lngs: Record<string, LanguageInfo> = {
   ko: { nativeName: "KO" },
   en: { nativeName: "EN" },
 };
-
 type LngKey = keyof typeof lngs;
+type MenuType = "link" | "text" | "button";
+
+interface MenuItem {
+  label: string;
+  type: MenuType;
+  path?: string;
+}
 
 const Header = () => {
   const navigate = useNavigate();
@@ -21,7 +30,7 @@ const Header = () => {
     setMenuOpen(false);
   };
 
-  const menuList = [
+  const menuList: MenuItem[] = [
     { label: "home", type: "link", path: process.env.PUBLIC_URL },
     { label: "about", type: "text" },
     { label: "work", type: "text" },
@@ -29,7 +38,6 @@ const Header = () => {
     { label: "typescript", type: "button", path: "/typeScript" },
     { label: "editor", type: "button", path: "/editor" },
   ];
-
   const delayArr = ["", "delay-75", "delay-100", "delay-150"];
 
   return (
@@ -72,7 +80,7 @@ const Header = () => {
           {/* 메뉴 리스트 */}
           <ul
             className={clsx(
-              "absolute left-1/2 -translate-x-1/2 min-w-[97vw] text-center bg-[#f8f8f8]/40 backdrop-blur-[10px] rounded-[5px] pt-[100px] pb-[30px] box-border z-40 transition-all ",
+              "absolute left-1/2 -translate-x-1/2 min-w-[97vw] text-center bg-[#f8f8f8]/10 backdrop-blur-[10px] rounded-[5px] pt-[100px] pb-[30px] box-border z-40 transition-all ",
               menuOpen
                 ? "top-[10px] opacity-100 pointer-events-auto duration-400"
                 : "top-[-1300%] opacity-0 pointer-events-none duration-[1500ms]"
@@ -136,7 +144,7 @@ const Header = () => {
             .map(([lng, { nativeName }]) => (
               <button
                 key={lng}
-                onClick={() => i18n.changeLanguage(lng)}
+                onClick={() => i18n.changeLanguage(lng as LngKey)}
                 className="px-2 py-1 rounded"
               >
                 {nativeName}
