@@ -31,7 +31,9 @@
     "autoprefixer": "^10.4.21",
     "ckeditor4": "4.22.1",
     "ckeditor4-react": "4.1.0",
+    "clsx": "^2.1.1",
     "gsap": "^3.12.5",
+    "i18next-browser-languagedetector": "^8.2.0",
     "postcss": "^8.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -74,6 +76,8 @@
     "@types/ckeditor4": "^4.20.7",
     "@types/react": "^19.1.8",
     "gh-pages": "^6.1.1",
+    "i18next": "^25.2.1",
+    "react-i18next": "^15.5.3",
     "tailwindcss": "^3.4.17"
   }
 }
