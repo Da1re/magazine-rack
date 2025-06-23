@@ -1,17 +1,11 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+
 import { useNavigate } from "react-router-dom";
+import { LanguageSwitcher } from "./common/components/language-switcher";
+import { useI18n } from "./common/hooks/i18n";
 import mainLogo from "./images/logo/Main_Logo.png";
 
-interface LanguageInfo {
-  nativeName: string;
-}
-const lngs: Record<string, LanguageInfo> = {
-  ko: { nativeName: "KO" },
-  en: { nativeName: "EN" },
-};
-type LngKey = keyof typeof lngs;
 type MenuType = "link" | "text" | "button";
 
 interface MenuItem {
@@ -22,7 +16,7 @@ interface MenuItem {
 
 const Header = () => {
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useI18n();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavigate = (path: string) => {
@@ -139,17 +133,7 @@ const Header = () => {
         </nav>
 
         <div className="w-[150px] text-black flex-shrink-0 flex justify-end items-center gap-2 z-50">
-          {Object.entries(lngs)
-            .filter(([lng]) => lng !== i18n.resolvedLanguage)
-            .map(([lng, { nativeName }]) => (
-              <button
-                key={lng}
-                onClick={() => i18n.changeLanguage(lng as LngKey)}
-                className="px-2 py-1 rounded text-sm"
-              >
-                {nativeName}
-              </button>
-            ))}
+          <LanguageSwitcher />
         </div>
       </div>
     </header>
